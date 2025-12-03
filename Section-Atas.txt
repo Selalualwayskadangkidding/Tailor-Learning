@@ -1,0 +1,598 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Cara Memulai Usaha Jahit Rumahan</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #ffffff;
+      color: #333;
+      line-height: 1.6;
+    }
+
+    .container { max-width: 480px; margin: 0 auto; padding: 0 20px; }
+    section { padding: 60px 0; }
+
+    .section-title {
+      text-align: center;
+      font-size: 26px;
+      color: #1565C0;
+      margin-bottom: 40px;
+      font-weight: 700;
+    }
+
+    /* HERO */
+    .hero {
+      background: linear-gradient(135deg, #E3F2FD 0%, #BBDEFB 100%);
+      padding: 60px 0 80px;
+      text-align: center;
+      animation: fadeIn 1s ease-in;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    .hero h1 {
+      font-size: 28px;
+      color: #1565C0;
+      margin-bottom: 20px;
+      font-weight: 700;
+      line-height: 1.3;
+    }
+
+    .hero p {
+      font-size: 16px;
+      color: #555;
+      margin-bottom: 30px;
+      line-height: 1.5;
+    }
+
+    .hero-image {
+      width: 100%;
+      max-width: 300px;
+      height: 200px;
+      border-radius: 20px;
+      margin: 30px auto;
+      box-shadow: 0 10px 30px rgba(21, 101, 192, 0.2);
+      overflow: hidden;
+      background: #90CAF9;
+    }
+
+    .hero-image img { width: 100%; height: 100%; object-fit: cover; display: block; }
+
+    .btn-primary {
+      background: #2196F3;
+      color: #fff !important;
+      padding: 16px 40px;
+      border: none;
+      border-radius: 30px;
+      font-size: 18px;
+      font-weight: 600;
+      cursor: pointer;
+      box-shadow: 0 4px 15px rgba(33, 150, 243, 0.4);
+      transition: all 0.3s ease;
+      display: inline-block;
+      text-decoration: none !important;
+      -webkit-tap-highlight-color: transparent;
+    }
+
+    .btn-primary:hover {
+      background: #1976D2;
+      transform: translateY(-2px) scale(1.05);
+      box-shadow: 0 6px 20px rgba(33, 150, 243, 0.6);
+    }
+
+    .btn-primary:visited,
+    .btn-primary:active {
+      color: #fff !important;
+      text-decoration: none !important;
+    }
+
+    /* MANFAAT */
+    .section-manfaat { padding: 60px 0; }
+
+    .benefit-card {
+      background: white;
+      padding: 24px;
+      border-radius: 16px;
+      margin-bottom: 20px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+      transition: all 0.3s ease;
+      border: 2px solid transparent;
+    }
+
+    .benefit-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 8px 20px rgba(33, 150, 243, 0.25);
+      border-color: #BBDEFB;
+    }
+
+    .benefit-icon { font-size: 40px; margin-bottom: 12px; }
+    .benefit-card h3 { color: #1976D2; font-size: 18px; margin-bottom: 8px; }
+    .benefit-card p { color: #666; font-size: 15px; }
+
+    /* LEARN */
+    .section-learn { padding: 60px 0; background: #F5F9FF; }
+
+    .learn-card {
+      background: white;
+      padding: 24px;
+      border-radius: 16px;
+      margin-bottom: 20px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+      transition: all 0.3s ease;
+      border: 2px solid transparent;
+    }
+
+    .learn-card:hover {
+      border-color: #2196F3;
+      box-shadow: 0 6px 18px rgba(33, 150, 243, 0.2);
+      background: #F5FAFF;
+    }
+
+    .learn-number {
+      background: linear-gradient(135deg, #2196F3, #1976D2);
+      color: white;
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: 700;
+      margin-bottom: 12px;
+      font-size: 18px;
+    }
+
+    .learn-card h3 { color: #1565C0; font-size: 17px; margin-bottom: 8px; }
+    .learn-card p { color: #666; font-size: 14px; }
+
+    /* TESTIMONI */
+    .testimoni { padding: 60px 0; background: #F5F9FF; }
+
+    .testimoni-card {
+      background: white;
+      padding: 24px;
+      border-radius: 16px;
+      margin-bottom: 24px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+      transition: all 0.3s ease;
+    }
+
+    .testimoni-card:hover {
+      transform: scale(1.03);
+      box-shadow: 0 8px 24px rgba(33, 150, 243, 0.2);
+    }
+
+    .testimoni-header { display: flex; align-items: center; margin-bottom: 16px; }
+
+    .testimoni-avatar {
+      width: 60px;
+      height: 60px;
+      border-radius: 50%;
+      overflow: hidden;
+      background: #eaf2ff;
+      margin-right: 16px;
+      flex: 0 0 auto;
+      box-shadow: 0 6px 16px rgba(0,0,0,0.12);
+    }
+
+    .testimoni-avatar img { width: 100%; height: 100%; object-fit: cover; display: block; }
+
+    .testimoni-info h4 { color: #1565C0; font-size: 16px; margin-bottom: 4px; }
+    .testimoni-info p { color: #888; font-size: 13px; }
+
+    .stars { color: #FFC107; font-size: 20px; margin-bottom: 12px; letter-spacing: 2px; }
+    .stars span { display: inline-block; animation: starPop 0.5s ease-out; }
+
+    @keyframes starPop {
+      0% { transform: scale(0); }
+      50% { transform: scale(1.2); }
+      100% { transform: scale(1); }
+    }
+
+    .testimoni-text { color: #555; font-size: 15px; line-height: 1.6; font-style: italic; }
+
+    /* PRICING */
+    .pricing { padding: 60px 0; background: white; }
+
+    .pricing-card {
+      background: white;
+      border-radius: 20px;
+      padding: 30px 24px;
+      margin-bottom: 24px;
+      box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+      transition: all 0.3s ease;
+      border: 2px solid #E3F2FD;
+      position: relative;
+    }
+
+    .pricing-card:hover {
+      transform: translateY(-8px);
+      box-shadow: 0 12px 30px rgba(33, 150, 243, 0.25);
+    }
+
+    .pricing-card.featured {
+      border-color: #2196F3;
+      box-shadow: 0 6px 20px rgba(33, 150, 243, 0.2);
+    }
+
+    .pricing-card.featured:hover {
+      box-shadow: 0 12px 35px rgba(33, 150, 243, 0.35);
+    }
+
+    .ribbon {
+      position: absolute;
+      top: -10px;
+      right: 20px;
+      background: linear-gradient(135deg, #FF9800, #F57C00);
+      color: white;
+      padding: 6px 20px;
+      border-radius: 20px;
+      font-size: 12px;
+      font-weight: 700;
+      box-shadow: 0 4px 12px rgba(255, 152, 0, 0.4);
+    }
+
+    .pricing-card h3 { color: #1565C0; font-size: 24px; margin-bottom: 16px; text-align: center; }
+
+    .price { text-align: center; margin-bottom: 24px; }
+    .price-old { color: #999; text-decoration: line-through; font-size: 16px; display: block; }
+    .price-new { color: #1976D2; font-size: 36px; font-weight: 700; display: block; margin-top: 4px; }
+
+    .pricing-features { list-style: none; margin-bottom: 24px; padding-left: 0; }
+
+    .pricing-features li {
+      padding: 12px 0;
+      border-bottom: 1px solid #F0F0F0;
+      color: #555;
+      font-size: 15px;
+    }
+
+    .pricing-features li:last-child { border-bottom: none; }
+
+    /* FIX: centang warna biru biar tema putih biru */
+    .pricing-features li:before {
+      content: "✓";
+      color: #2196F3;
+      font-weight: 700;
+      margin-right: 10px;
+      font-size: 18px;
+    }
+
+    .btn-paket {
+      width: 100%;
+      background: #2196F3;
+      color: white;
+      padding: 14px;
+      border: none;
+      border-radius: 30px;
+      font-size: 16px;
+      font-weight: 600;
+      cursor: pointer;
+      transition: all 0.3s ease;
+    }
+
+    .btn-paket:hover {
+      background: #1976D2;
+      transform: scale(1.03);
+      box-shadow: 0 4px 15px rgba(33, 150, 243, 0.4);
+    }
+
+    /* POPUP */
+    .social-proof {
+      position: fixed;
+      left: 16px;
+      bottom: 16px;
+      width: min(340px, calc(100% - 32px));
+      background: rgba(255, 255, 255, 0.92);
+      backdrop-filter: blur(10px);
+      border: 1px solid rgba(227, 242, 253, 0.9);
+      border-radius: 16px;
+      box-shadow: 0 12px 28px rgba(0, 0, 0, 0.14);
+      padding: 12px 12px;
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      transform: translateY(20px);
+      opacity: 0;
+      transition: opacity 0.35s ease, transform 0.35s ease;
+      z-index: 9999;
+    }
+
+    .social-proof.show { opacity: 1; transform: translateY(0); }
+
+    .sp-avatar {
+      width: 44px;
+      height: 44px;
+      border-radius: 14px;
+      background: linear-gradient(135deg, #64B5F6, #2196F3);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #fff;
+      font-size: 18px;
+      font-weight: 800;
+      flex: 0 0 auto;
+      text-transform: uppercase;
+    }
+
+    .sp-content { min-width: 0; }
+
+    .sp-title {
+      font-weight: 700;
+      color: #0f3d8a;
+      font-size: 14px;
+      line-height: 1.2;
+      margin-bottom: 2px;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+
+    .sp-sub { color: #5d6a7a; font-size: 12px; }
+
+    .sp-close {
+      margin-left: auto;
+      background: transparent;
+      border: none;
+      font-size: 18px;
+      line-height: 1;
+      color: #7a8797;
+      cursor: pointer;
+      padding: 6px;
+      border-radius: 10px;
+      flex: 0 0 auto;
+    }
+
+    .sp-close:hover { background: rgba(227, 242, 253, 0.8); }
+  </style>
+</head>
+<body>
+
+  <div class="hero">
+    <div class="container">
+      <h1>Cara Memulai Usaha Jahit Rumahan Dari Pemula Hingga Bisa Terima Orderan!</h1>
+      <p>Panduan lengkap step by step khusus untuk pemula yang ingin membangun usaha jahit dari rumah dengan modal kecil dan menghasilkan penghasilan tambahan</p>
+      <div class="hero-image">
+        <img src="https://amartha.com/_next/image/?url=https%3A%2F%2Faccess.amartha.com%2Fuploads%2FAMF_03070_48949e52ff.jpg&w=1920&q=75" alt="Usaha jahit rumahan">
+      </div>
+      <a href="#pricing" class="btn-primary">Mulai Belajar Sekarang</a>
+    </div>
+  </div>
+
+  <section class="section-manfaat">
+    <div class="container">
+      <h2 class="section-title">Kenapa Harus Ikuti Panduan Ini?</h2>
+
+      <div class="benefit-card">
+        <div class="benefit-icon">🎯</div>
+        <h3>Cocok untuk Pemula Tanpa Pengalaman</h3>
+        <p>Dimulai dari nol, dijelaskan dengan bahasa yang mudah dipahami bahkan untuk yang belum pernah menjahit sama sekali</p>
+      </div>
+
+      <div class="benefit-card">
+        <div class="benefit-icon">🏠</div>
+        <h3>Bisa Dimulai dari Rumah dengan Modal Kecil</h3>
+        <p>Tidak perlu sewa tempat atau beli alat mahal, mulai dengan peralatan sederhana yang terjangkau</p>
+      </div>
+
+      <div class="benefit-card">
+        <div class="benefit-icon">📋</div>
+        <h3>Panduan Step by Step Sampai Terima Orderan</h3>
+        <p>Setiap langkah dijelaskan detail dari persiapan, belajar, hingga cara mendapatkan pelanggan pertama</p>
+      </div>
+
+      <div class="benefit-card">
+        <div class="benefit-icon">🛠️</div>
+        <h3>Mengenal Alat dan Bahan Jahit Penting</h3>
+        <p>Panduan lengkap alat dan bahan apa saja yang wajib dimiliki beserta tips memilihnya</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section-learn">
+    <div class="container">
+      <h2 class="section-title">Apa yang Akan Kamu Pelajari?</h2>
+
+      <div class="learn-card">
+        <div class="learn-number">1</div>
+        <h3>Dasar Penggunaan Mesin Jahit</h3>
+        <p>Mengenal bagian bagian mesin jahit, cara memasang benang, dan teknik dasar menjahit yang benar</p>
+      </div>
+
+      <div class="learn-card">
+        <div class="learn-number">2</div>
+        <h3>Cara Membuat Pola Sederhana</h3>
+        <p>Belajar membuat pola pakaian sederhana seperti rok, kemeja, dan dress untuk pemula</p>
+      </div>
+
+      <div class="learn-card">
+        <div class="learn-number">3</div>
+        <h3>Teknik Menjahit dan Perbaikan Pakaian</h3>
+        <p>Menguasai teknik jahit dasar, obras, kelim, dan berbagai perbaikan pakaian yang sering diminta</p>
+      </div>
+
+      <div class="learn-card">
+        <div class="learn-number">4</div>
+        <h3>Cara Menentukan Harga Jasa</h3>
+        <p>Strategi menghitung biaya produksi dan menentukan harga yang kompetitif namun tetap untung</p>
+      </div>
+
+      <div class="learn-card">
+        <div class="learn-number">5</div>
+        <h3>Cara Menerima Orderan Pertama</h3>
+        <p>Tips mencari pelanggan pertama, mulai dari lingkungan terdekat hingga online</p>
+      </div>
+
+      <div class="learn-card">
+        <div class="learn-number">6</div>
+        <h3>Cara Promosi Online Usaha Jahit Rumahan</h3>
+        <p>Strategi marketing digital sederhana menggunakan WhatsApp, Facebook, dan Instagram</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="testimoni">
+    <div class="container">
+      <h2 class="section-title">Kata Mereka yang Sudah Berhasil</h2>
+
+      <div class="testimoni-card">
+        <div class="testimoni-header">
+          <div class="testimoni-avatar">
+            <img src="https://cdn.bithe.co/files/images/20221006-buk-yusniwati.png" alt="Foto Rina Wati">
+          </div>
+          <div class="testimoni-info">
+            <h4>Rina Wati</h4>
+            <p>Ibu Rumah Tangga, Jakarta</p>
+          </div>
+        </div>
+        <div class="stars">
+          <span>★</span><span>★</span><span>★</span><span>★</span><span>★</span>
+        </div>
+        <p class="testimoni-text">"Panduannya sangat mudah dipahami! Saya yang tadinya tidak tahu apa apa tentang menjahit, sekarang sudah bisa menerima orderan perbaikan pakaian dari tetangga. Dalam 2 bulan sudah dapat penghasilan tambahan 2 juta!"</p>
+      </div>
+
+      <div class="testimoni-card">
+        <div class="testimoni-header">
+          <div class="testimoni-avatar">
+            <img src="https://www.kaltengtimes.co.id/wp-content/uploads/2022/12/20221221_074107_copy_774x1032.jpg" alt="Foto Siti Nurhasanah">
+          </div>
+          <div class="testimoni-info">
+            <h4>Siti Nurhasanah</h4>
+            <p>Mahasiswa, Bandung</p>
+          </div>
+        </div>
+        <div class="stars">
+          <span>★</span><span>★</span><span>★</span><span>★</span><span>★</span>
+        </div>
+        <p class="testimoni-text">"Sebagai mahasiswa yang butuh uang saku tambahan, panduan ini benar benar membantu. Step by step nya jelas, ada template pesan untuk promosi juga. Sekarang saya sudah punya 15 pelanggan tetap!"</p>
+      </div>
+
+      <div class="testimoni-card">
+        <div class="testimoni-header">
+          <div class="testimoni-avatar">
+            <img src="https://www.gonews.co/assets/news/18072018/gonewsco_3pub6_54160.jpg" alt="Foto Dewi Lestari">
+          </div>
+          <div class="testimoni-info">
+            <h4>Dewi Lestari</h4>
+            <p>Karyawan Swasta, Surabaya</p>
+          </div>
+        </div>
+        <div class="stars">
+          <span>★</span><span>★</span><span>★</span><span>★</span><span>☆</span>
+        </div>
+        <p class="testimoni-text">"Awalnya ragu karena belum pernah pegang mesin jahit. Tapi setelah ikuti panduan ini, ternyata tidak sesulit yang dibayangkan. Sekarang usaha jahit rumahan saya jadi side hustle yang menjanjikan!"</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="pricing" id="pricing">
+    <div class="container">
+      <h2 class="section-title">Pilih Paket yang Sesuai Untukmu</h2>
+
+      <div class="pricing-card">
+        <h3>Basic</h3>
+        <div class="price">
+          <span class="price-old">Rp 199.000</span>
+          <span class="price-new">Rp 99.000</span>
+        </div>
+        <ul class="pricing-features">
+          <li>Akses panduan PDF lengkap</li>
+          <li>Checklist alat dan bahan jahit</li>
+          <li>Video tutorial dasar (3 video)</li>
+          <li>Grup WhatsApp komunitas</li>
+        </ul>
+        <button class="btn-paket" type="button">Pilih Paket Basic</button>
+      </div>
+
+      <div class="pricing-card featured">
+        <div class="ribbon">TERLARIS</div>
+        <h3>Pro</h3>
+        <div class="price">
+          <span class="price-old">Rp 399.000</span>
+          <span class="price-new">Rp 199.000</span>
+        </div>
+        <ul class="pricing-features">
+          <li>Semua benefit paket Basic</li>
+          <li>Template pesan order WhatsApp</li>
+          <li>Panduan pricing dan kalkulasi biaya</li>
+          <li>Materi strategi promosi online</li>
+          <li>E book tips closing pelanggan</li>
+        </ul>
+        <button class="btn-paket" type="button">Ambil Paket Pro</button>
+      </div>
+    </div>
+  </section>
+
+  <div class="social-proof" id="socialProof" aria-live="polite">
+    <div class="sp-avatar" id="spAvatar" aria-hidden="true">N</div>
+    <div class="sp-content">
+      <div class="sp-title" id="spTitle">Nina sudah memesan</div>
+      <div class="sp-sub" id="spSub">10 menit yang lalu</div>
+    </div>
+    <button class="sp-close" id="spClose" aria-label="Tutup notifikasi" title="Tutup">×</button>
+  </div>
+
+  <script>
+    (function () {
+      const el = document.getElementById("socialProof");
+      const avatarEl = document.getElementById("spAvatar");
+      const titleEl = document.getElementById("spTitle");
+      const subEl = document.getElementById("spSub");
+      const closeBtn = document.getElementById("spClose");
+
+      const messages = [
+        { name: "Dina", title: "Dina sudah memesan", sub: "beberapa menit yang lalu" },
+        { name: "Rani", title: "Rani baru ambil Paket Pro", sub: "3 menit yang lalu" },
+        { name: "Mila", title: "Mila sudah memesan", sub: "5 menit yang lalu" },
+        { name: "Sari", title: "Sari baru ambil Paket Basic", sub: "7 menit yang lalu" },
+        { name: "Nina", title: "Nina sudah memesan", sub: "10 menit yang lalu" },
+        { name: "Ayu", title: "Ayu baru ambil Paket Pro", sub: "12 menit yang lalu" }
+      ];
+
+      let idx = 0;
+      let isClosed = false;
+
+      function show(msg) {
+        const initial = (msg.name || msg.title || "?").trim().charAt(0) || "?";
+        avatarEl.textContent = initial.toUpperCase();
+        titleEl.textContent = msg.title;
+        subEl.textContent = msg.sub;
+        el.classList.add("show");
+      }
+
+      function hide() {
+        el.classList.remove("show");
+      }
+
+      function cycle() {
+        if (isClosed) return;
+
+        show(messages[idx % messages.length]);
+        idx++;
+
+        setTimeout(() => {
+          hide();
+          setTimeout(() => cycle(), 3500);
+        }, 4000);
+      }
+
+      closeBtn.addEventListener("click", () => {
+        isClosed = true;
+        hide();
+      });
+
+      setTimeout(cycle, 1200);
+    })();
+  </script>
+
+</body>
+</html>

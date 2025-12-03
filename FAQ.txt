@@ -1,0 +1,168 @@
+<!-- ============== SECTION FAQ (ACCORDION) ============== -->
+<section class="faq" id="faq">
+  <div class="container">
+    <h2 class="section-title">FAQ (Pertanyaan yang Sering Ditanyakan)</h2>
+
+    <style>
+      .faq { background: #F5F9FF; }
+      .faq-item {
+        background: #fff;
+        border-radius: 16px;
+        box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+        border: 2px solid #E3F2FD;
+        margin-bottom: 16px;
+        overflow: hidden;
+      }
+      .faq-q {
+        width: 100%;
+        text-align: left;
+        padding: 18px 16px;
+        background: #fff;
+        border: 0;
+        cursor: pointer;
+        display: flex;
+        gap: 12px;
+        align-items: center;
+        font-weight: 700;
+        color: #1565C0;
+        font-size: 15px;
+      }
+      .faq-q:hover { background: #F5FAFF; }
+      .faq-icon {
+        width: 32px;
+        height: 32px;
+        border-radius: 10px;
+        background: linear-gradient(135deg, #2196F3, #1976D2);
+        color: #fff;
+        display:flex;
+        align-items:center;
+        justify-content:center;
+        flex: 0 0 auto;
+        font-size: 18px;
+      }
+      .faq-arrow {
+        margin-left: auto;
+        color: #1976D2;
+        font-size: 18px;
+        transition: transform 0.25s ease;
+      }
+      .faq-a {
+        max-height: 0;
+        overflow: hidden;
+        transition: max-height 0.3s ease;
+        border-top: 1px solid #E3F2FD;
+      }
+      .faq-a .inner {
+        padding: 14px 16px 18px;
+        color: #555;
+        font-size: 14px;
+        line-height: 1.7;
+      }
+      .faq-item.open .faq-a { max-height: 240px; }
+      .faq-item.open .faq-arrow { transform: rotate(180deg); }
+    </style>
+
+    <div class="faq-item">
+      <button class="faq-q" type="button">
+        <span class="faq-icon">?</span>
+        Saya benar benar pemula, bisa mulai dari nol?
+        <span class="faq-arrow">⌄</span>
+      </button>
+      <div class="faq-a"><div class="inner">
+        Bisa. Fokusnya dimulai dari pengenalan alat, basic jahitan, sampai latihan proyek sederhana dulu, jadi kamu nggak “loncat materi”.
+      </div></div>
+    </div>
+
+    <div class="faq-item">
+      <button class="faq-q" type="button">
+        <span class="faq-icon">?</span>
+        Harus punya mesin jahit mahal dulu?
+        <span class="faq-arrow">⌄</span>
+      </button>
+      <div class="faq-a"><div class="inner">
+        Nggak harus. Kamu bisa mulai dari mesin standar yang penting stabil dan mudah perawatan. Upgrade nanti setelah order mulai rutin.
+      </div></div>
+    </div>
+
+    <div class="faq-item">
+      <button class="faq-q" type="button">
+        <span class="faq-icon">?</span>
+        Kalau hasil jahitan saya belum rapi, gimana?
+        <span class="faq-arrow">⌄</span>
+      </button>
+      <div class="faq-a"><div class="inner">
+        Normal banget. Mulai dari latihan jahitan lurus, kelim, dan obras dasar. Kuncinya konsisten latihan 15 sampai 30 menit per hari.
+      </div></div>
+    </div>
+
+    <div class="faq-item">
+      <button class="faq-q" type="button">
+        <span class="faq-icon">?</span>
+        Bisnis jahit rumahan laku nggak sih?
+        <span class="faq-arrow">⌄</span>
+      </button>
+      <div class="faq-a"><div class="inner">
+        Laku, apalagi jasa yang sering dicari: permak celana, kecilkan baju, ganti resleting, obras, dan jahit sederhana.
+      </div></div>
+    </div>
+
+    <div class="faq-item">
+      <button class="faq-q" type="button">
+        <span class="faq-icon">?</span>
+        Saya takut nggak ada pelanggan pertama, mulai dari mana?
+        <span class="faq-arrow">⌄</span>
+      </button>
+      <div class="faq-a"><div class="inner">
+        Mulai dari circle terdekat: tetangga, keluarga, teman. Tawarkan jasa “permak ringan” dulu + minta testimoni dan foto before after.
+      </div></div>
+    </div>
+
+    <div class="faq-item">
+      <button class="faq-q" type="button">
+        <span class="faq-icon">?</span>
+        Gimana cara nentuin harga biar nggak kemahalan/kerendahan?
+        <span class="faq-arrow">⌄</span>
+      </button>
+      <div class="faq-a"><div class="inner">
+        Hitung waktu kerja + biaya benang/aksesoris + margin. Lalu cek harga pasaran sekitar biar tetap kompetitif dan untung.
+      </div></div>
+    </div>
+
+    <div class="faq-item">
+      <button class="faq-q" type="button">
+        <span class="faq-icon">?</span>
+        Kalau cuma punya waktu malam/akhir pekan, bisa jalan?
+        <span class="faq-arrow">⌄</span>
+      </button>
+      <div class="faq-a"><div class="inner">
+        Bisa. Banyak yang mulai dari side hustle: ambil order kecil dulu (permak/repair) dengan target 1 sampai 3 order per minggu.
+      </div></div>
+    </div>
+
+    <div class="faq-item">
+      <button class="faq-q" type="button">
+        <span class="faq-icon">?</span>
+        Saya takut salah ambil order dan bikin pelanggan kecewa
+        <span class="faq-arrow">⌄</span>
+      </button>
+      <div class="faq-a"><div class="inner">
+        Amanin proses: catat ukuran, sepakati model, kasih estimasi selesai, dan mulai dari job yang kamu kuasai. Kalau ragu, tawarkan opsi sederhana dulu.
+      </div></div>
+    </div>
+
+    <script>
+      (function () {
+        const items = document.querySelectorAll(".faq .faq-item");
+        items.forEach((item) => {
+          const btn = item.querySelector(".faq-q");
+          btn.addEventListener("click", () => {
+            items.forEach((it) => {
+              if (it !== item) it.classList.remove("open");
+            });
+            item.classList.toggle("open");
+          });
+        });
+      })();
+    </script>
+  </div>
+</section>
